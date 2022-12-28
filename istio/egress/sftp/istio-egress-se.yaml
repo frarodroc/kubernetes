@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: ServiceEntry
+metadata:
+  name: sftp-se
+  namespace: istio-egress
+spec:
+  exportTo:
+  - .
+  hosts:
+  - test.rebex.net
+  ports:
+  - name: tcp-22-sftp
+    number: 22
+    protocol: TCP
+  resolution: DNS
