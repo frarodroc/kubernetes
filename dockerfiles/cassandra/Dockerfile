@@ -1,3 +1,5 @@
 FROM cassandra:3
 
-chmod -R 777 /etc/cassandra
+RUN chmod -R 777 /etc/cassandra
+
+CMD ["cassandra", "-f", "-R"]
