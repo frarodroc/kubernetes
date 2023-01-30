@@ -1,2 +1,3 @@
-# Istio Additional Egress Examples
-Istio YAML objects for different egress examples.
+# egress
+
+Istio Additional Egress ExamplesIstio YAML objects for different egress examples.
