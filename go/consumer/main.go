@@ -14,6 +14,11 @@ func main() {
     if err != nil {
         fmt.Printf("There was an error from the API request %s", err.Error())
     } else {
-        fmt.Println(string(responseData))
+        responseData, err := ioutil.ReadAll(response.Body)
+        if err != nil {
+            fmt.Printf("There was an error from parsing the request body %s", err.Error())
+        } else {
+            fmt.Println(string(responseData))
+        }
     }
 }
