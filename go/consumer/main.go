@@ -12,13 +12,13 @@ func homePage(w http.ResponseWriter, r *http.Request){
     url := os.Getenv("URL")
     response, err := http.Get(url)
     if err != nil {
-        fmt.Printf("There was an error from the API request %s", err.Error())
+        fmt.Fprintf(w, "There was an error from the API request %s", err.Error())
     } else {
         responseData, err := ioutil.ReadAll(response.Body)
         if err != nil {
-            fmt.Printf("There was an error from parsing the request body %s", err.Error())
+            fmt.Fprintf(w, "There was an error from parsing the request body %s", err.Error())
         } else {
-            fmt.Println(string(responseData))
+            fmt.Fprintf(w, string(responseData))
         }
     }
 }
