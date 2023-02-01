@@ -7,7 +7,7 @@ import (
     "os"
 )
 
-func main() {
+func homePage(w http.ResponseWriter, r *http.Request){
     url := os.Getenv("URL")
     response, err := http.Get(url)
     if err != nil {
@@ -20,4 +20,13 @@ func main() {
             fmt.Println(string(responseData))
         }
     }
+}
+
+func handleRequests() {
+    http.HandleFunc("/", homePage)
+    log.Fatal(http.ListenAndServe(":8080", nil))
+}
+
+func main() {
+    handleRequests()
 }
