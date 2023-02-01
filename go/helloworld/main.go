@@ -14,3 +14,7 @@ func handleRequests() {
     http.HandleFunc("/", homePage)
     log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
+func main() {
+    handleRequests()
+}
