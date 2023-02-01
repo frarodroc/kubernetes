@@ -6,4 +6,4 @@ Consuming an API.
 
 Environment variables:
 
-* URL: URL the consumer is going to request.
+* URL
