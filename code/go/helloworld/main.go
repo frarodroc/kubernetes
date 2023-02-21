@@ -7,6 +7,7 @@ import (
 )
 
 func homePage(w http.ResponseWriter, r *http.Request){
+    w.Header().Set("My-Custom-Header", "1234")
     fmt.Fprintf(w, "Hello World!")
 }
 

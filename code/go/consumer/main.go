@@ -11,16 +11,8 @@ import (
 func homePage(w http.ResponseWriter, r *http.Request){
     url := os.Getenv("URL")
     response, err := http.Get(url)
-    if err != nil {
-        fmt.Fprintf(w, "There was an error from the API request %s", err.Error())
-    } else {
-        responseData, err := ioutil.ReadAll(response.Body)
-        if err != nil {
-            fmt.Fprintf(w, "There was an error from parsing the request body %s", err.Error())
-        } else {
-            fmt.Fprintf(w, string(responseData))
-        }
-    }
+    w.Header().Set("My-Custom-Header", "1234")
+    fmt.Fprintf(w, string(responseData))
 }
 
 func handleRequests() {
