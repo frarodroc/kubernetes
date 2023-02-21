@@ -3,14 +3,24 @@ package main
 import (
     "fmt"
     "log"
+    "io/ioutil"
     "net/http"
-    "github.com/google/uuid"
+    "time"
+    "os"
 )
 
 func homePage(w http.ResponseWriter, r *http.Request){
     response, err := http.Get("http://backend.backend:8080")
-    id := uuid.New()
-    w.Header().Set("My-Custom-Header", id.String())
+    if err != nil {
+        fmt.Print(err.Error())
+        os.Exit(1)
+    }
+    responseData, err := ioutil.ReadAll(response.Body)
+    if err != nil {
+        log.Fatal(err)
+    }
+    time := time.Now()
+    w.Header().Set("My-Custom-Header", time.String())
     fmt.Fprintf(w, string(responseData))
 }
 
