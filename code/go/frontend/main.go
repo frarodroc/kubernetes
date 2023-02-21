@@ -4,10 +4,14 @@ import (
     "fmt"
     "log"
     "net/http"
+    "github.com/google/uuid"
 )
 
 func homePage(w http.ResponseWriter, r *http.Request){
-    fmt.Fprintf(w, "Hello World!")
+    response, err := http.Get("http://backend.backend:8080")
+    id := uuid.New()
+    w.Header().Set("My-Custom-Header", id.String())
+    fmt.Fprintf(w, string(responseData))
 }
 
 func handleRequests() {
