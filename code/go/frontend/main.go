@@ -11,7 +11,7 @@ import (
 )
 
 func homePage(w http.ResponseWriter, r *http.Request){
-    response, err := http.Get("http://backend.backend:8080")
+    response, err := http.Get("http://backend.backend:8080/hello")
     if err != nil {
         fmt.Print(err.Error())
         os.Exit(1)
