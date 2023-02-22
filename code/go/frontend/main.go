@@ -19,8 +19,9 @@ func homePage(w http.ResponseWriter, r *http.Request){
     if err != nil {
         log.Fatal(err)
     }
-    time := time.Now()
-    w.Header().Set("My-Custom-Header", time.String())
+    now := time.Now()
+    seconds := now.Unix()
+    w.Header().Set("My-Custom-Header", strconv.FormatInt(seconds, 10))
     fmt.Fprintf(w, string(responseData))
 }
 
