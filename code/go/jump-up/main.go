@@ -14,9 +14,9 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 
     // Add Envoy headers to the request
     headers := []string{"x-request-id", "x-b3-traceid", "x-b3-spanid", "x-b3-parentspanid", "x-b3-sampled", "x-b3-flags"}
-    for header := range headers {
+    for i, header := range headers {
         value := r.Header.Get(header);
-        if header != nil {
+        if len(value) > 0 {
             w.Header().Set(header, value)
         }
     }
