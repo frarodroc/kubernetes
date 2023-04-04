@@ -1,4 +1,21 @@
 ---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: size-1
+  namespace: istio-system
+spec:
+  host: size-1.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
+  to:
+    kind: Service
+    name: istio-ingressgateway
+    weight: 100
+  port:
+    targetPort: https
+  tls:
+    termination: passthrough
+  wildcardPolicy: None
+---
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
@@ -16,6 +33,9 @@ spec:
     - "*"
     tls:
       mode: SIMPLE
+      credentialName: grafana-tls
+---
+
 ---
 kind: Service
 apiVersion: v1
