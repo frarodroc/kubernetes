@@ -51,11 +51,22 @@ spec:
     name: default
     route:
     - destination:
-        host: lorem-ipsum.lorem-ipsum-1
+        host: lorem-ipsum.lorem-ipsum-1.svc.cluster.local
         port:
           number: 8080
         subset: lorem-ipsum
       weight: 100
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: lorem-ipsum
+spec:
+  host: lorem-ipsum.lorem-ipsum-1.svc.cluster.local
+  subsets:
+  - labels:
+      version: lorem-ipsum
+    name: lorem-ipsum
 ---
 kind: Service
 apiVersion: v1
