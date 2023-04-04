@@ -3,16 +3,19 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: size
+  namespace: istio-system
 spec:
   selector:
     istio: ingressgateway
   servers:
   - port:
-      number: 8080
-      name: http
-      protocol: HTTP
+      number: 443
+      name: https
+      protocol: HTTPS
     hosts:
     - "*"
+    tls:
+      mode: SIMPLE
 ---
 kind: Deployment
 apiVersion: apps/v1
@@ -31,6 +34,8 @@ spec:
       labels:
         app: size
         deploymentconfig: size
+      annotations:
+        sidecar.istio.io/inject: 'true'
     spec:
       containers:
         - name: size
