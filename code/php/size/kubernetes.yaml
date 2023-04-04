@@ -17,6 +17,27 @@ spec:
     tls:
       mode: SIMPLE
 ---
+kind: Service
+apiVersion: v1
+metadata:
+  name: size
+  labels:
+    app: size
+spec:
+  ports:
+    - name: http-8080
+      protocol: HTTP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: size
+    deploymentconfig: size
+  type: ClusterIP
+  sessionAffinity: None
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+---
 kind: Deployment
 apiVersion: apps/v1
 metadata:
