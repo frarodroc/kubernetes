@@ -2,10 +2,10 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: lorem-ipsum-1
+  name: ${NAMESPACE}
   namespace: istio-system
 spec:
-  host: lorem-ipsum-1.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
+  host: ${NAMESPACE}.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
   to:
     kind: Service
     name: istio-ingressgateway
@@ -35,23 +35,22 @@ spec:
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
-  name: service-expertise-tree-app3
-  namespace: ff0da6b6-6acf-3d79-b4c6-ce512f798714
+  name: lorem-ipsum
 spec:
   gateways:
   - mesh
   - istio-system/gw-lorem-ipsum
   hosts:
-  - lorem-ipsum-1.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
+  - ${NAMESPACE}.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
   http:
   - match:
     - authority:
-        prefix: lorem-ipsum-1.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
+        prefix: ${NAMESPACE}.apps.cluster-pkhtl.pkhtl.sandbox209.opentlc.com
       port: 80
     name: default
     route:
     - destination:
-        host: lorem-ipsum.lorem-ipsum-1.svc.cluster.local
+        host: lorem-ipsum.${NAMESPACE}.svc.cluster.local
         port:
           number: 8080
         subset: lorem-ipsum
@@ -62,7 +61,7 @@ kind: DestinationRule
 metadata:
   name: lorem-ipsum
 spec:
-  host: lorem-ipsum.lorem-ipsum-1.svc.cluster.local
+  host: lorem-ipsum.${NAMESPACE}.svc.cluster.local
   subsets:
   - labels:
       version: lorem-ipsum
