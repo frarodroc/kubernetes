@@ -1,3 +1,0 @@
-# html
-
-Plain html projects.
