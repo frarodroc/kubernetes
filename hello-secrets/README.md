@@ -27,11 +27,3 @@ Push the container image to a public or private repository:
 podman push quay.io/frarodroc/hello-secrets:1.0.0
 ```
 
-## Changes 
-
-* Create the "php" folder.
-* Create the "configmap.yaml" template.
-* Create the "secret.yaml" temaplte.
-* Modify the "deployment.yaml" template to include environment variables from the Secret.
-
-
