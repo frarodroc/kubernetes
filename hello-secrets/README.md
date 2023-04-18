@@ -2,13 +2,32 @@
 
 This is an example of how to read environment variables from Secrets.
 
-This is a helm repository.
+This project contains two folders:
+
+1. A [Helm Chart](./helm/) project
+2. The [source code](./src/) of the application
+
+## Build the container image
+
+Build the container image:
 
 ```
-helm create hello-secrets
+podman build ./src -t quay.io/frarodroc/hello-secrets:1.0.0
 ```
 
-## Changes
+Login to the public or private registry:
+
+```
+podman login -u frarodroc quay.io
+```
+
+Push the container image to a public or private repository:
+
+```
+podman push quay.io/frarodroc/hello-secrets:1.0.0
+```
+
+## Changes 
 
 * Create the "php" folder.
 * Create the "configmap.yaml" template.

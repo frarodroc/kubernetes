@@ -2,12 +2,13 @@ package main
 
 import (
     "fmt"
+    "os"
     "log"
     "net/http"
 )
 
 func homePage(w http.ResponseWriter, r *http.Request){
-    fmt.Fprintf(w, "Hello World!")
+    fmt.Fprintf(os.Stdout, "Name is: %s\n", os.Getenv("VAR1"))
 }
 
 func handleRequests() {
