@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: php
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "7.2-apache"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -55,6 +55,11 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+secret:
+  data:
+    VAR1: value1
+    VAR2: value2
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
