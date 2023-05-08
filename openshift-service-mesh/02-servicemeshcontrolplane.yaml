@@ -1,8 +1,14 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+---
 apiVersion: maistra.io/v2
 kind: ServiceMeshControlPlane
 metadata:
   name: basic
-  namespace: openshift-operators
+  namespace: istio-system
 spec:
   tracing:
     type: None
