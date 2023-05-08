@@ -4,6 +4,16 @@ kind: Namespace
 metadata:
   name: sleep
 ---
+apiVersion: maistra.io/v1
+kind: ServiceMeshMember
+metadata:
+  name: default
+  namespace: sleep
+spec:
+  controlPlaneRef:
+    name: basic
+    namespace: istio-system
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
