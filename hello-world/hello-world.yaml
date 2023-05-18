@@ -48,13 +48,12 @@ spec:
     spec:
       serviceAccountName: hello-world
       containers:
-      - name: hello-world
-        image: bitnami/apache:latest
-      volumeMounts:
-      - name: config-volume
-        mountPath: /app
-  volumes:
-    - name: config-volume
-      configMap:
-        name: hello-world
----
+        - name: hello-world
+          image: bitnami/apache:latest
+          volumeMounts:
+            - name: hello-world
+              mountPath: /app/
+      volumes:
+        - name: hello-world
+          configMap:
+            name: hello-world
