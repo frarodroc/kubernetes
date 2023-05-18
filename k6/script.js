@@ -3,5 +3,5 @@ import { sleep } from 'k6';
 
 export default function () {
   sleep(1);
-  http.get("http://httpd.apps.exampl.com");
+  http.get("http://httpd.apps.example.com");
 }
