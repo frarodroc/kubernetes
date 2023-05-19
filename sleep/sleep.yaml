@@ -3,7 +3,6 @@ apiVersion: maistra.io/v1
 kind: ServiceMeshMember
 metadata:
   name: default
-  namespace: sleep
 spec:
   controlPlaneRef:
     name: basic
