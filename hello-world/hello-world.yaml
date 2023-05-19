@@ -1,3 +1,4 @@
+### ISTIO RELATED RESOURCES
 ---
 apiVersion: maistra.io/v1
 kind: ServiceMeshMember
@@ -40,11 +41,14 @@ spec:
   - match:
     - uri:
         prefix: /hello-world
+    rewrite:
+      prefix: /
     route:
     - destination:
         port:
           number: 8080
         host: hello-world
+### MAIN KUBERNETES RESOURCES
 ---
 apiVersion: v1
 kind: ServiceAccount
