@@ -1,8 +1,20 @@
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: script
+data:
+  script.js: |-
+    import http from 'k6/http';
+
+    export default function () {
+      http.get("http://httpd.apps.example.com");
+    }
+---
 apiVersion: batch/v1
 kind: Job
 metadata:
   name: k6
-  namespace: k6
 spec:
   backoffLimit: 4
   ttlSecondsAfterFinished: 600
@@ -15,7 +27,7 @@ spec:
         - "--duration"
         - "60s"
         - "--vus"
-        - "20000"
+        - "5000"
         - "/opt/k6/script.js"
         image: loadimpact/k6
         imagePullPolicy: Always
