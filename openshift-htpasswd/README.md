@@ -1,8 +1,13 @@
-# HTPasswd Identity Provider
+# OpenShift HTPasswd
 
-Create cluster-admin user "admin" using OpenShift HTPasswd 
-identity provider.
+Create "admin" user with "cluster-admin" role using OpenShift HTPasswd identity provider.
+
+## Getting Started
 
 ```
-oc create -f 
+oc apply -f https://raw.githubusercontent.com/frarodroc/kubernetes/master/openshift-htpasswd/openshift-htpasswd.yaml
 ```
+
+## Authors
+
+* Francisco Rodríguez Rocha
