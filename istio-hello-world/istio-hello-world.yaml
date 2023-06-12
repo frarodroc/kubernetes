@@ -41,7 +41,7 @@ spec:
     - uri:
         prefix: /hello-world
     rewrite:
-      prefix: /
+      uri: /
     route:
     - destination:
         port:
