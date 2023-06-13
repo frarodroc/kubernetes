@@ -2,4 +2,18 @@
 
 Easy way to install OpenShift Service Mesh operators in an online OpenShift cluster.
 
-**Note:** Tracing is disabled by default.
+```
+oc apply -f https://raw.githubusercontent.com/frarodroc/kubernetes/master/openshift-servicemesh/01-subscriptions.yaml
+```
+
+Wait until the installation is succeeded:
+
+```
+oc get csv -n openshift-operators
+```
+
+Create the Control Plane:
+
+```
+oc apply -f https://raw.githubusercontent.com/frarodroc/kubernetes/master/openshift-servicemesh/02-controlplane.yaml
+```
