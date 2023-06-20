@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: script
+  namespace: hello-world
+data:
+  script.sh: |-
+    sleep 1
+    if [ "$FAIL" == "true" ]
+      exit 1
+    else
+      exit 0
+    fi
+binaryData: {}
+immutable: false
