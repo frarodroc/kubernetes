@@ -1,5 +1,6 @@
 sleep 1
 if [ "$FAIL" == "true" ]
+then
   echo $(date) Helth check failed
   exit 1
 else
