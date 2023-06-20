@@ -41,6 +41,24 @@ spec:
     spec:
       containers:
         - name: hello-world
+          readinessProbe:
+            exec:
+              command:
+                - /other/script.sh
+            initialDelaySeconds: 25
+            timeoutSeconds: 10
+            periodSeconds: 2
+            successThreshold: 1
+            failureThreshold: 12
+          livenessProbe:
+            exec:
+              command:
+                - /other/script.sh
+            initialDelaySeconds: 20
+            timeoutSeconds: 10
+            periodSeconds: 2
+            successThreshold: 1
+            failureThreshold: 6
           image: bitnami/apache:latest
           volumeMounts:
             - name: hello-world
