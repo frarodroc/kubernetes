@@ -59,7 +59,7 @@ spec:
             periodSeconds: 2
             successThreshold: 1
             failureThreshold: 6
-          image: bitnami/apache:latest
+          image: quay.io/frarodroc/health-checks:latest
           volumeMounts:
             - name: health-checks
               mountPath: /app/
