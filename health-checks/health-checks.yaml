@@ -2,49 +2,49 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: hello-world
+  name: health-checks
   labels:
-    app: hello-world
+    app: health-checks
 data:
   index.html: "Hello World!"
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world
+  name: health-checks
   labels:
-    app: hello-world
+    app: health-checks
 spec:
   ports:
   - port: 8080
     name: http
   selector:
-    app: hello-world
+    app: health-checks
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: health-checks
   labels:
-    app: hello-world
+    app: health-checks
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world
+      app: health-checks
   template:
     metadata:
       labels:
-        app: hello-world
+        app: health-checks
       annotations:
         sidecar.istio.io/inject: 'true'
     spec:
       containers:
-        - name: hello-world
+        - name: health-checks
           readinessProbe:
             exec:
               command:
-                - /other/script.sh
+                - /tmp/script.sh
             initialDelaySeconds: 25
             timeoutSeconds: 10
             periodSeconds: 2
@@ -53,7 +53,7 @@ spec:
           livenessProbe:
             exec:
               command:
-                - /other/script.sh
+                - /tmp/script.sh
             initialDelaySeconds: 20
             timeoutSeconds: 10
             periodSeconds: 2
@@ -61,15 +61,9 @@ spec:
             failureThreshold: 6
           image: bitnami/apache:latest
           volumeMounts:
-            - name: hello-world
+            - name: health-checks
               mountPath: /app/
-            - name: script
-              mountPath: /other/
       volumes:
-        - name: hello-world
+        - name: health-checks
           configMap:
-            name: hello-world
-        - name: script
-          configMap:
-            name: script
-            defaultMode: 511
+            name: health-checks
