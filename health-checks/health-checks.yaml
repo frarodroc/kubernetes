@@ -2,11 +2,20 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: health-checks
+  name: app
   labels:
     app: health-checks
 data:
   index.html: "Hello World!"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test
+  labels:
+    app: health-checks
+data:
+  test: "Health check passed"
 ---
 apiVersion: v1
 kind: Service
@@ -44,7 +53,7 @@ spec:
           readinessProbe:
             exec:
               command:
-                - /tmp/script.sh
+                - cat /tmp/test
             initialDelaySeconds: 25
             timeoutSeconds: 10
             periodSeconds: 2
@@ -53,17 +62,22 @@ spec:
           livenessProbe:
             exec:
               command:
-                - /tmp/script.sh
+                - cat /tmp/test
             initialDelaySeconds: 20
             timeoutSeconds: 10
             periodSeconds: 2
             successThreshold: 1
             failureThreshold: 6
-          image: quay.io/frarodroc/health-checks:latest
+          image: bitnami/apache:latest
           volumeMounts:
-            - name: health-checks
+            - name: app
               mountPath: /app/
+            - name: test
+              mountPath: /tmp/
       volumes:
-        - name: health-checks
+        - name: app
           configMap:
-            name: health-checks
+            name: app
+        - name: test
+          configMap:
+            name: test

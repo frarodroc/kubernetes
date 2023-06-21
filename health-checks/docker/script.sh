@@ -1,5 +1,6 @@
+#/bin/bash
 sleep 1
-if [ "$FAIL" == true ]
+if [ "$FAIL" = true ]
 then
   echo $(date) Helth check failed
   exit 1
