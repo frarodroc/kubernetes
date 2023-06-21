@@ -1,2 +1,2 @@
 FROM bitnami/apache:latest
-COPY script.sh /tmp/
+COPY healthy /tmp/

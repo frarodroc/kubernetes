@@ -9,15 +9,6 @@ data:
   index.html: "Hello World!"
 ---
 apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: healthy
-  labels:
-    app: health-checks
-data:
-  healthy: "OK"
----
-apiVersion: v1
 kind: Service
 metadata:
   name: health-checks
@@ -70,16 +61,11 @@ spec:
             periodSeconds: 2
             successThreshold: 1
             failureThreshold: 6
-          image: bitnami/apache:latest
+          image: quay.io/frarodroc/health-checks:latest
           volumeMounts:
             - name: app
               mountPath: /app/
-            - name: healthy
-              mountPath: /tmp/
       volumes:
         - name: app
           configMap:
             name: app
-        - name: healthy
-          configMap:
-            name: healthy
