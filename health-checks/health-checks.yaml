@@ -9,6 +9,7 @@ spec:
   ports:
   - port: 8080
     name: http
+    targetPort: 80
   selector:
     app: health-checks
 ---
@@ -53,3 +54,6 @@ spec:
             successThreshold: 1
             failureThreshold: 6
           image: quay.io/frarodroc/health-checks:latest
+          ports:
+          - containerPort: 80
+
