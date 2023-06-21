@@ -32,6 +32,17 @@ spec:
     spec:
       containers:
         - name: health-checks
+          lifecycle:
+            postStart:
+              exec:
+                command:
+                - touch
+                - /tmp/healthy
+          httpGet:
+            path: /index.html
+            port: 80
+            host: localhost
+            scheme: HTTP
           readinessProbe:
             exec:
               command:
@@ -52,5 +63,11 @@ spec:
             periodSeconds: 2
             successThreshold: 1
             failureThreshold: 6
-          image: quay.io/frarodroc/health-checks:latest
-
+          image: bitnami/apache:2.4
+          securityContext:
+            allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            seccompProfile:
+              type: "RuntimeDefault"
+            capabilities:
+              drop: ["ALL"]
