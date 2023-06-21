@@ -11,11 +11,11 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: test
+  name: healthy
   labels:
     app: health-checks
 data:
-  test: "Health check passed"
+  test: "OK"
 ---
 apiVersion: v1
 kind: Service
@@ -53,7 +53,8 @@ spec:
           readinessProbe:
             exec:
               command:
-                - cat /tmp/test
+              - cat
+              - /tmp/healthy
             initialDelaySeconds: 25
             timeoutSeconds: 10
             periodSeconds: 2
@@ -62,7 +63,8 @@ spec:
           livenessProbe:
             exec:
               command:
-                - cat /tmp/test
+              - cat
+              - /tmp/healthy
             initialDelaySeconds: 20
             timeoutSeconds: 10
             periodSeconds: 2
@@ -72,12 +74,12 @@ spec:
           volumeMounts:
             - name: app
               mountPath: /app/
-            - name: test
+            - name: healthy
               mountPath: /tmp/
       volumes:
         - name: app
           configMap:
             name: app
-        - name: test
+        - name: healthy
           configMap:
-            name: test
+            name: healthy
