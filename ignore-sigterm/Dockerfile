@@ -1,3 +1,3 @@
 FROM fedora
-RUN echo 'date; echo "Hello world!"; sleep 10' > script.sh && chmod +x script.sh
+RUN echo 'while true; do date; echo "Hello world!"; sleep 10; done' > script.sh && chmod +x script.sh
 ENTRYPOINT ["/bin/bash", "/script.sh"]
