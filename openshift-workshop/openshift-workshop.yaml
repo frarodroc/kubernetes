@@ -1,0 +1,1092 @@
+---
+apiVersion: v1
+data:
+  htpasswd: |
+    admin:$2y$05$1JFq7mkc/nlRvwuuHZeiY.B0.U4sW78Ze8b6MT0Q2KkrKiel0/zAi
+    user1:$2y$05$b.xpYIlJOZd/fhXoH6rv0.uCeLCO6wMM3eymh8LcCoox4SRr0rCoq
+    user2:$2y$05$XjEu5iLi52nI6r6FWqmCmuaUcsU/FGHmP013STw2sBCjaueiS9aY6
+    user3:$2y$05$qN8Lblm6tCp0QqCRI55eDevtS2WqE0wYWnCSaTH.yTHSoZ0P38Q0m
+    user4:$2y$05$BFtjIA6x0ZXwtOQvDOKZwO5IJ32D7a4tKTBJ/yBi6ifEPES.V.nn.
+    user5:$2y$05$355YdyG8qTMwSXDxjiWO6OeSFCx1zB3yhq4FAiLxDi1tXOeG3pGXK
+    user6:$2y$05$sgZIl04wPwwKlilp/hfzBOBqwKXR8m.5tqqCp0wUA8Tw1cs0lb8Ci
+    user7:$2y$05$0N5g0ktm7Ouh4YJBsbixzewtvj8smXNX51M6dXUTuTrwmfwfcPTUa
+    user8:$2y$05$3IETy5HFf/vx7mlGNUniiOAvvI6ssnZ.VpNPJFrMCvKOSiX9M/5wS
+    user9:$2y$05$o8J6xXIC1pBFjNzmKMT3xu..edNzuCw3lxfdGEgVrz1UJ5YCeVk7K
+    user10:$2y$05$2mHd9g5S2KnIQsgrFmhDzug20CQZEIE9NcP6MBEmLVj2.c4j1Gcq.
+    user11:$2y$05$99zluOGZof03KS4ILike2Os2pJPnUojiONS2vwVZ3c00Kk/fYtp3u
+    user12:$2y$05$B68y/uU6OOowxcomhL9gKOhFBsxFacUHearT51Xa1mdVE38cl0a8G
+    user13:$2y$05$K4rE1a1pb4aJ5PWM73Age.b0e2s2u1oNZiILhIb3/AUAUBDjm4mA.
+    user14:$2y$05$fgDdB3gf1P3ZOnNwlXG1veKFWc5D0JnJrJY9B8C4TB.7Bpc4M5ryu
+    user15:$2y$05$ep34MC4DQTsK.bta6oXCZuY5cJqw062W4T7ehNTh3Z4zh0BdgJlcu
+    user16:$2y$05$z77GjoAKNQFCwF.o6EWMjuikc/oxt9oKg/k9SQT5fTq9j3oCWsH5G
+    user17:$2y$05$DVVds6nf0s3C2kOWIhCv3eFH72U.oEqufaThHVGLUwxq/Qd/2Lcje
+    user18:$2y$05$tXGBnE3sbnTAc5.YiszoYO/vzHwhmhz0L6NH0sZOeBaUsP6oZeUOm
+    user19:$2y$05$cBrPRE3v.zUejxOV8ORxvujhqSYn9zeVa3FySqVgVjbA62Ydd/nr6
+    user20:$2y$05$dTDwqMn4Vt.BQATCtr.cLOxOssCQ8jZ7hUlEv15K1JsNac0x03S8C
+    user21:$2y$05$qvsi21iATVmpoK3rnP/kE./7m26K3RfsTZFLfiHu8w8WBCZOjqAw6
+    user22:$2y$05$JIuqy7Bv1EerEn5HfG6wju655UflqUEmVoWbUsdbfxlmmxv90XtYq
+    user23:$2y$05$eHl7mdA3Yl63t39j0eZbZu8r9eD/rFrByfd/h3IwXLFgn6CRBY7/C
+    user24:$2y$05$k28qrdQc8JpXoSFIXP0MV.OWiaDDqQkT9.zLzQK1A6qXUEJrL4jCS
+    user25:$2y$05$nmUyD3ZVWxrwhE6MnciCY.bgeiS.1D6jPJLKjHESSDTLtv5LfMFEy
+    user26:$2y$05$FBZ9O2QPqJkJ9C/bGTe.ZusrB57VnBo6KbfI9CdW9GlvKSsQLNb2G
+    user27:$2y$05$qWUkvG1BWCW3zwGtM6MSAeOv5VnoaD0yxrIIF5R0IS0YRPInumnsW
+    user28:$2y$05$fSDkWhjWGmaFLip2LKWvweQWA/988z2XY5cERFwKExtJ6srysV4Ka
+    user29:$2y$05$wYWvi57KvVW8uiMz.0.PFucw6/CFGj04DhA1slraMZ2Ixjg11kFDy
+    user30:$2y$05$bzKzAfHO.VWSqkD.F5Ve4ubjr3KzCdYlOGggHimmULLutAGD1gGAe
+    user31:$2y$05$BcGqpMcWHh2Db5KPJTM6u.A9hc1AdRSewu/5qexoB63bg2QOEGSQq
+    user32:$2y$05$RLkkAJl7YeJnxZLaV493We5VFG6h9/P2GWm0ZKueYpPJgo4IFmDvy
+    user33:$2y$05$MZjnXqpXux3cmhrKFIpdEOUeeHJE1zfDv8.VNj5ppo0Ma1.ieK0ee
+    user34:$2y$05$3kdDNZentbiOUmFARx6zke80bV4Eai69UdKg0Sw4BQmYCriwHONZm
+    user35:$2y$05$HWQvILhavqTIEhC8V/OMjurc.FnrwUijPP4Cm9oIAWphMDx65OxR6
+    user36:$2y$05$iVWPuerY1YvHJ5QGkhMUDO6aZC4djjpFlHhl83uv/FSmqjVmkvtC.
+    user37:$2y$05$kzh4B6lnViW7qvKgbZsQcuGvc11.ebhTw2l0bgeICCeuAJSK5Nq5O
+    user38:$2y$05$blO3DA.FDkJEdyyjnmzl8OPi9gXkvDiOlx8pDA5tCF0m7JZFaEoj2
+    user39:$2y$05$ObhIydPrOUD44PsYXxeOM.psVwLJPBaIlfgNB7nmiClO3Z61z2I3u
+    user40:$2y$05$g5Ih1/s8LaspxYZC0bbYSejV2IkQI61Z/l6AZ72JpKCLPZlG.FHk.
+    user41:$2y$05$QProi2bmK.yIdpByyH2FR.KQRxGzxVB3/LX8L5mRlm/7J5.xtTBR.
+    user42:$2y$05$J/lnR8k5vLnN54mmPP3hxeudviUT2siBAR0GUVHeDabqVseRt61Y2
+    user43:$2y$05$bRDhuLQBMxYJ9rRslht4EuHIYgr56VM4WBwSJVftAKF7QlKWaDfJS
+    user44:$2y$05$GV7S295vzovd.1DB8iTXt..JqYBHSSt7T9iBakb0D4yaF.vO.4.su
+    user45:$2y$05$rNWPCh.Jla5/9cgNoIZlSeRzCwC/sTWBPsd3lP8ezXCTp521u9b6O
+    user46:$2y$05$Z1gktwjrb7sukpjSc/6z1eKRUZVJmkMsGcJL25vQUqs3Tq.PRAuNm
+    user47:$2y$05$N7MNeoXtEBw7Wb80z.A3D.o21uJVfJpEKj.zhc0I/TwiBRCAKAXlC
+    user48:$2y$05$GD1hAOQ0LZuux3liUFFc1ulNzqmqH.Pi0TQMLvtJBmjEn7tPrvK3C
+    user49:$2y$05$nnfWQp3TSxgM6YrKD1kY9uE0adGxPhbKI7AFT4TyVXGvuXQiraZg.
+    user50:$2y$05$jT8qdEH8asDQbzDGEKVZRuA5wKfxym5q7UMGRpUImG9J/5jCnlAyG
+kind: Secret
+metadata:
+  name: htpasswd
+  namespace: openshift-config
+type: Opaque
+---
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  name: cluster
+spec:
+  identityProviders:
+  - name: htpasswd
+    mappingMethod: claim
+    type: HTPasswd
+    htpasswd:
+      fileData:
+        name: htpasswd
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: admin
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: admin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+---
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: users
+users:
+  - user1
+  - user2
+  - user3
+  - user4
+  - user5
+  - user6
+  - user7
+  - user8
+  - user9
+  - user10
+  - user11
+  - user12
+  - user13
+  - user14
+  - user15
+  - user16
+  - user17
+  - user18
+  - user19
+  - user20
+  - user21
+  - user22
+  - user23
+  - user24
+  - user25
+  - user26
+  - user27
+  - user28
+  - user29
+  - user30
+  - user31
+  - user32
+  - user33
+  - user34
+  - user35
+  - user36
+  - user37
+  - user38
+  - user39
+  - user40
+  - user41
+  - user42
+  - user43
+  - user44
+  - user45
+  - user46
+  - user47
+  - user48
+  - user49
+  - user50
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user1-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user2-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user3-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user4-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user5-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user6-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user7-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user8-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user9-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user10-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user11-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user12-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user13-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user14-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user15-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user16-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user17-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user18-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user19-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user20-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user21-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user22-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user23-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user24-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user25-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user26-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user27-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user28-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user29-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user30-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user31-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user32-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user33-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user34-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user35-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user36-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user37-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user38-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user39-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user40-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user41-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user42-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user43-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user44-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user45-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user46-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user47-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user48-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user49-namespace
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user50-namespace
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user1-edit
+  namespace: user1-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user1
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user2-edit
+  namespace: user2-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user2
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user3-edit
+  namespace: user3-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user3
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user4-edit
+  namespace: user4-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user4
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user5-edit
+  namespace: user5-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user5
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user6-edit
+  namespace: user6-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user6
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user7-edit
+  namespace: user7-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user7
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user8-edit
+  namespace: user8-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user8
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user9-edit
+  namespace: user9-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user9
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user10-edit
+  namespace: user10-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user10
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user11-edit
+  namespace: user11-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user11
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user12-edit
+  namespace: user12-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user12
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user13-edit
+  namespace: user13-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user13
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user14-edit
+  namespace: user14-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user14
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user15-edit
+  namespace: user15-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user15
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user16-edit
+  namespace: user16-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user16
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user17-edit
+  namespace: user17-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user17
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user18-edit
+  namespace: user18-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user18
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user19-edit
+  namespace: user19-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user19
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user20-edit
+  namespace: user20-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user20
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user21-edit
+  namespace: user21-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user21
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user22-edit
+  namespace: user22-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user22
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user23-edit
+  namespace: user23-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user23
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user24-edit
+  namespace: user24-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user24
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user25-edit
+  namespace: user25-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user25
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user26-edit
+  namespace: user26-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user26
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user27-edit
+  namespace: user27-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user27
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user28-edit
+  namespace: user28-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user28
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user29-edit
+  namespace: user29-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user29
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user30-edit
+  namespace: user30-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user30
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user31-edit
+  namespace: user31-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user31
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user32-edit
+  namespace: user32-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user32
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user33-edit
+  namespace: user33-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user33
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user34-edit
+  namespace: user34-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user34
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user35-edit
+  namespace: user35-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user35
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user36-edit
+  namespace: user36-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user36
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user37-edit
+  namespace: user37-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user37
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user38-edit
+  namespace: user38-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user38
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user39-edit
+  namespace: user39-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user39
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user40-edit
+  namespace: user40-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user40
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user41-edit
+  namespace: user41-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user41
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user42-edit
+  namespace: user42-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user42
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user43-edit
+  namespace: user43-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user43
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user44-edit
+  namespace: user44-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user44
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user45-edit
+  namespace: user45-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user45
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user46-edit
+  namespace: user46-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user46
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user47-edit
+  namespace: user47-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user47
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user48-edit
+  namespace: user48-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user48
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user49-edit
+  namespace: user49-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user49
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user50-edit
+  namespace: user50-namespace
+subjects:
+  - kind: User
+    apiGroup: rbac.authorization.k8s.io
+    name: user50
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
