@@ -6,7 +6,7 @@ metadata:
   namespace: openshift-operators
 spec:
   channel: stable
-  installPlanApproval: Automatic
+  installPlanApproval: Manual
   name: jaeger-product
   source: redhat-operators
   sourceNamespace: openshift-marketplace
@@ -18,10 +18,11 @@ metadata:
   namespace: openshift-operators
 spec:
   channel: stable
-  installPlanApproval: Automatic
+  installPlanApproval: Manual
   name: kiali-ossm
   source: redhat-operators
   sourceNamespace: openshift-marketplace
+  startingCSV: kiali-operator.v1.48.3
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
@@ -30,7 +31,8 @@ metadata:
   namespace: openshift-operators
 spec:
   channel: stable
-  installPlanApproval: Automatic
+  installPlanApproval: Manual
   name: servicemeshoperator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
+  startingCSV: servicemeshoperator.v2.2.3
