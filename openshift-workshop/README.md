@@ -13,15 +13,6 @@ The passwords are:
 oc apply -f https://raw.githubusercontent.com/frarodroc/kubernetes/master/openshift-workshop/openshift-workshop.yaml
 ```
 
-To create it using the web console you must first delete the OAuth object that is created by default:
-
-```
-oc delete oauth cluster
-oc create -f https://raw.githubusercontent.com/frarodroc/kubernetes/master/ope>
-```
-
-
-
 ## Authors
 
 * Francisco Rodríguez Rocha
