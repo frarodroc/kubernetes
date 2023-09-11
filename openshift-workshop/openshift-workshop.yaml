@@ -1,6 +1,6 @@
 ---
 apiVersion: v1
-data:
+stringData:
   htpasswd: |
     admin:$2y$05$1JFq7mkc/nlRvwuuHZeiY.B0.U4sW78Ze8b6MT0Q2KkrKiel0/zAi
     user1:$2y$05$b.xpYIlJOZd/fhXoH6rv0.uCeLCO6wMM3eymh8LcCoox4SRr0rCoq
